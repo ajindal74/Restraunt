@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restraunt Webpage</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|IBM+Plex+Mono|Inconsolata|Poiret+One" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    	*{
+    		margin:0;
+    		padding: 0;
+            overflow: auto;
+    	}
+    	.container1
+    	{
+    		position: relative;
+    	}
+    	div
+    	{
+    		display: block;
+    	}
+    	.backimg
+    	{
+    		background-image: url('back.jpg');
+    		min-height: 100%;
+    		width: 100%;
+    		background-position: center;
+    		background-size: cover;
+    		position: absolute;
+    	}
+    	.centerlogo
+    	{
+    		font-size: 50px;
+    		text-align: center;
+    		color: white;
+    		position: absolute;
+    		top: 40%;
+    		left: 45%;
+    		padding: 12px;
+    		font-family: Roboto Mono;
+
+    	}
+    	.centerlogo:hover
+    	{
+    		background-color: gray;
+    	
+    	}
+    	.sidenav
+    	{
+    		
+    		color: white;
+    		display: inline-block;
+    		padding: 20px;
+    	}
+    	.sidenav p
+    	{
+    		
+    		margin-bottom:19px;
+    	}
+    	
+    	.sidenav .btn1:hover
+    	{
+    		background-color: #EDE5E5;
+    		opacity: 0.9;
+    		color: black;
+    	}
+    	.bottomtxt
+    	{
+    		
+    		color: white;
+    		position: absolute;
+    		bottom: 35px;
+    		left: 25px;
+    	}
+    	.bottomtxt p
+    	{
+    		font-size: 22px;
+    		font-family:Roboto Mono;
+    		color: #EDE5E5;
+    	}
+    	.btn1
+    	{
+    		border: none;
+    	    padding: 12px 12px 12px 12px;
+    	    background-color:black;
+    	    vertical-align: middle;
+    	    overflow: hidden;
+    		text-decoration: none;
+    		font-size: 28px;
+    		font-family: Roboto Mono;
+    	}
+    	.modal-dialog
+    	{
+    		overflow: hidden;
+    		background-color:  #EDE5E5;
+    	}
+    	#modhead
+    	{
+    		background-color: black;
+    		color: white;
+    	}
+    	.modal-body h2
+    	{
+    		font-family: 'IBM Plex Mono', monospace;
+    		font-size: 35px;
+    		font-weight: 900;
+    	}
+    	.modal-body h3
+    	{
+    		font-size: 18px;
+    		line-height: 19px;
+    		font-family: Inconsolata;
+    	}
+    	.price
+    	{
+    		margin-top: -10px;
+    		float: right;
+    		margin-right: 15px;
+    	}
+    	#formtxt
+    	{
+    		font-family: Inconsolata;
+    	}
+    </style>
+</head>
+<body>
+	<div class="backimg container1">
+		<div class="container-fluid">
+			<h1 class="centerlogo">LOGO</h1>
+			<div class="sidenav">
+				<p><button data-toggle="modal" data-target="#menu" class="btn1">menu</button></p>
+				<p><button data-toggle="modal" data-target="#contact" class="btn1">cotact</button></p>
+			</div>
+			<div class="bottomtxt">
+				<p>monday-friday 10a.m to 9p.m | saturday 10a.m to 5p.m</p>
+			
+				<p>yemen road, yemen</p>
+				<p style="font-family: caveat;">Powered by Anmol Jindal</p>
+			</div>
+			<div class="modal fade" id="menu" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header" id="modhead">
+							<button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+							<h2 style="text-align: center; font-family: roboto mono;">menu</h2>
+						</div>
+						<div class="modal-body">
+							<h2 style="text-align: center;">Starters</h2>
+							<div class="price">
+								<h3>$8.5</h3>
+								<h3>$7.7</h3> 
+								<h3>$10.5</h3>
+							</div>
+							<h3>starter1</h3>
+							<h3>starter2</h3>
+							<h3>starter3</h3>
+							
+							<h2 style="text-align: center;">Main Courses</h2>
+							<div class="price">
+								<h3>$11.5</h3>
+								<h3>$15.7</h3>
+								<h3>$18.5</h3>
+								<h3>$14.8</h3>
+								<h3>$20.1</h3>
+							</div>
+							<h3>course1</h3>
+							<h3>course2</h3>
+							<h3>course3</h3>
+							<h3>course4</h3>
+							<h3>course5</h3>
+							<h2 style="text-align: center">Desserts</h2>
+							<div class="price">
+								<h3>$8.5</h3>
+								<h3>$7.7</h3>
+								<h3>$10.5</h3>
+							</div>
+							<h3>dessert1</h3>
+							<h3>dessert2</h3>
+							<h3>dessert3</h3>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="contact" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header" id="modhead">
+							<button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+							<h2 style="text-align: center; font-family: roboto mono;">contact</h2>
+						</div>
+						<div class="modal-body">
+							<form style="color: gray;" id="formtxt" method="GET"> 
+								<div class="form-group"><input type="text" placeholder="Name" name="name" class="form-control input-lg" required></div>
+								<div class="form-group"><input type="Number" placeholder="Number of guests" name="guests" class="form-control input-lg" required></div>
+								<div class="form-group"><input type="datetime-local" class="form-control input-lg" name="dt" required></div>
+								<div class="form-group"><input type="text" class="form-control input-lg" name="occasion" placeholder="Occasion" required></div>
+								<div class="form-group"><input type="text" class="form-control input-lg" name="message" placeholder="Message/Special Requirements"></div>
+								<button type="submit" class="btn btn-baic btn-md btn-lg" name="submit" style="background-color: #EDE5E5;" >Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
